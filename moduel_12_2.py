@@ -86,3 +86,6 @@ class TournamentTest(unittest.TestCase):
         results = tournament.start()
         self.all_results.update(results)
         self.assertEqual(results[min(results.keys())], self.runner1)
+
+if __name__ == '__main__':
+    unittest.main()
